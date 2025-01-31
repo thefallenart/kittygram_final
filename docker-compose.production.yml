@@ -24,8 +24,8 @@ services:
   gateway:
     image: thefallenartt/kittygram_gateway
     env_file: .env
-    ports:
-      - 9000:80
     volumes:
       - static:/static
       - media:/media
+    ports:
+      - 9000:80
