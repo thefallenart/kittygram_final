@@ -9,11 +9,11 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', '123456')
+SECRET_KEY = os.getenv('SECRET_KEY', '123')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['84.201.161.108', 'localhost', 'hertatheemanator.work.gd']
+ALLOWED_HOSTS = ['84.201.161.108', '127.0.0.1', 'localhost', 'hertatheemanator.work.gd']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
